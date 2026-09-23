@@ -22,18 +22,3 @@ Al ejecutar la aplicación por primera vez, se inicializa automáticamente la ba
 * **Contraseña:** `admin123`
 
 > ⚠️ **Nota:** Se recomienda cambiar la contraseña o crear una nueva cuenta de administrador desde el panel de gestión de usuarios.
-
-
-Proyecto Integracion/
-├── SistemaAsistencia/           # Código fuente principal de la aplicación WPF
-│   ├── Models/                 # Entidades de dominio (Usuario, RegistroAsistencia)
-│   ├── Data/                   # DbContext de EF Core y Seeding de datos
-│   ├── Services/               # Servicios de autenticación y lógica de negocio
-│   ├── ViewModels/             # Lógica de presentación (MVVM)
-│   ├── Views/                  # Vistas XAML (Login, Dashboard, Diálogos)
-│   ├── Converters/             # Conversores de datos para XAML
-│   └── Styles/                 # Recursos y estilos globales de UI
-├── Diagramas/                  # Arquitectura visual (Base de datos, Clases, Secuencia)
-├── Documentos Proyecto/        # Especificaciones técnicas y manuales
-├── .gitignore                  # Exclusión de binarios y datos locales
-└── README.md                   # Documentación general del proyecto
