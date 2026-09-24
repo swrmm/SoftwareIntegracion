@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="SistemaAsistencia.Tests/SistemaAsistencia.Tests.csproj" />
+  <Project Path="SistemaAsistencia/SistemaAsistencia.csproj" />
+</Solution>

@@ -1,0 +1,22 @@
+# Compilacion .NET
+[Bb]in/
+[Oo]bj/
+*.exe
+*.dll
+*.pdb
+
+# Base de Datos SQLite local
+*.db
+*.sqlite
+*.db-shm
+*.db-wal
+
+# Configuracion de IDE / Editor
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Sistema operativo
+Thumbs.db
+.DS_Store
