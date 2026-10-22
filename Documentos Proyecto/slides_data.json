@@ -1,0 +1,130 @@
+{
+  "slide1": {
+    "title": "SISTEMA DE CONTROL DE ASISTENCIA",
+    "subtitle": "Evaluación Práctica Etapa 2 - Continuidad Operacional (Semana 11)",
+    "meta": [
+      "Asignatura: Taller de Integración de Competencias II (IEI-094)",
+      "Institución: Instituto Profesional Santo Tomás",
+      "Fecha: Semana 11 / Octubre 2026"
+    ],
+    "integrantesTitle": "Equipo de Desarrollo:",
+    "integrantes": [
+      "Fabián Mora - Infraestructura, BD SQLite y Continuidad Operacional",
+      "Agustín Cañas - Desarrollo Frontend WPF MVVM y Lógica de Negocio",
+      "Paul Ferrada - Validación QA, Pruebas xUnit y Exportación Ofimática"
+    ]
+  },
+  "slide2": {
+    "title": "1. Contexto Empresarial y Continuidad Operacional",
+    "subtitle": "Caso de Aplicación: Empresa de productos químicos (25 trabajadores)",
+    "card1Title": "REQUERIMIENTOS DEL CLIENTE",
+    "card1Items": [
+      "Dotación: 25 colaboradores con necesidad de marcaje expedito de entrada y salida.",
+      "Normativa Laboral: Cumplimiento legal de registro fidedigno de jornada de trabajo.",
+      "Reportería para RRHH: Detección automática de atrasos (> 9:30 AM), salidas anticipadas (< 17:30 PM) e inasistencias.",
+      "Integración con Ofimática: Exportación de planillas compatibles con Microsoft Excel para liquidaciones.",
+      "Resiliencia: Operatividad garantizada aun ante interrupciones de conectividad externa."
+    ],
+    "card2Title": "GARANTÍA DE CONTINUIDAD (CE3N2)",
+    "card2Items": [
+      "SO Estandarizado: Windows 10/11 Pro 64-bit con runtime .NET 10 verificado.",
+      "Persistencia Local SQLite: Motor relacional embebido local, libre de caídas de red y latencias.",
+      "Seguridad de Credenciales: Contraseñas cifradas con algoritmo unidireccional BCrypt.",
+      "Manejo Global de Errores: Captura de excepciones no controladas con registro en crash.log.",
+      "Sincronización Horaria: Reloj local sincronizado por protocolo NTP para registros inalterables."
+    ]
+  },
+  "slide3": {
+    "title": "2. Carta Gantt de la Planificación (Actividad 2.2)",
+    "subtitle": "Cronograma de ejecución de actividades 2.2 a 2.6 y distribución de responsabilidades",
+    "headers": ["Fase / Actividad", "Semana", "Duración", "Entregable Principal", "Responsable", "Estado"],
+    "rows": [
+      ["Actividad 2.2: Planificación e Inventario", "Semana 7-8", "7 días", "Catastro de Recursos y Matriz de Riesgos", "Fabián Mora", "100% Conforme"],
+      ["Actividad 2.3: Manual de Instalación y SO", "Semana 9", "4 días", "Manual Técnico de Despliegue y Configuración", "Fabián Mora", "100% Conforme"],
+      ["Actividad 2.4: Bitácora de Despliegue", "Semana 9", "3 días", "Registro de Procedimientos Técnicos", "Paul Ferrada", "100% Conforme"],
+      ["Actividad 2.5: Validación y Pruebas xUnit", "Semana 10", "5 días", "19 Pruebas Unitarias y Módulo Ofimática", "Paul Ferrada", "100% Conforme"],
+      ["Actividad 2.6: Lista de Chequeo y Video", "Semana 11", "4 días", "Checklist Operacional, Video Tutorial y PPT", "Equipo Completo", "100% Conforme"]
+    ]
+  },
+  "slide4": {
+    "title": "3. Instalación y Configuración del Entorno (Actividad 2.3)",
+    "subtitle": "Estandarización técnica para asegurar la compatibilidad y continuidad operacional",
+    "card1Title": "SISTEMA OPERATIVO Y RUNTIME",
+    "card1Items": [
+      "SO: Windows 11 / Windows 10 Pro 64-bit.",
+      "Runtime: .NET 10 Desktop Runtime (x64) verificado con dotnet --list-runtimes.",
+      "Permisos: Lectura y escritura NTFS en el directorio de ejecución de la aplicación.",
+      "Resolución: Optimizado para 1080p (1920x1080) con escalado DPI al 100% sin distorsión."
+    ],
+    "card2Title": "BASE DE DATOS Y PERSISTENCIA",
+    "card2Items": [
+      "Motor: SQLite 3 relacional embebido local (asistencia.db).",
+      "ORM: Entity Framework Core 10 con consultas LINQ optimizadas.",
+      "Inicializador: DatabaseInitializer genera tablas e índices automáticamente.",
+      "Usuario Semilla: Cuenta admin@empresa.cl creada en primer arranque con clave BCrypt.",
+      "Integridad: Restricción compuesta que bloquea marcajes duplicados en el mismo día."
+    ],
+    "card3Title": "INTEGRACIÓN CON OFIMÁTICA",
+    "card3Items": [
+      "Servicio Especializado: ExportService para generación de planillas tabulares.",
+      "Codificación: UTF-8 con BOM (Byte Order Mark) para apertura transparente en Microsoft Excel.",
+      "Delimitador: Punto y coma (;) estándar para configuraciones regionales en español.",
+      "Funcionalidad: Exportación de atrasos, salidas e inasistencias en 1 clic."
+    ]
+  },
+  "slide5": {
+    "title": "4. Video Tutorial del Proceso de Instalación y Validación",
+    "subtitle": "Demostración audiovisual del computador operativo, despliegue y funcionamiento",
+    "urlTitle": "ENLACE DIRECTO AL VIDEO TUTORIAL (AULA VIRTUAL / YOUTUBE / DRIVE):",
+    "url": "https://youtu.be/ejemplo-enlace-video-asistencia (Reemplazar con enlace final de grabación)",
+    "structureTitle": "ESTRUCTURA DEL VIDEO DEMOSTRATIVO (TIPO TUTORIAL):",
+    "structureItems": [
+      "Min 00:00 - 01:15 (Fabián Mora): Presentación del equipo, contexto del caso empresarial y comprobación del computador operativo con Windows 11.",
+      "Min 01:15 - 02:45 (Fabián Mora): Proceso de instalación de .NET 10 Desktop Runtime, permisos NTFS e inicialización de base de datos SQLite.",
+      "Min 02:45 - 05:30 (Agustín Cañas): Demostración en vivo de la aplicación: Login admin/empleado, marcaje de asistencia, bloqueo de doble entrada y gestión de usuarios CRUD.",
+      "Min 05:30 - 07:15 (Paul Ferrada): Generación de reportes con filtros automáticos (atrasos > 9:30 AM, salidas < 17:30 PM, inasistencias) y exportación directa a Microsoft Excel.",
+      "Min 07:15 - 08:30 (Paul Ferrada y Equipo): Ejecución en consola de 19 pruebas unitarias automatizadas (dotnet test) y cierre con sello valórico Tomista."
+    ]
+  },
+  "slide6": {
+    "title": "5. Validación Técnica y Suite de Pruebas xUnit (Actividad 2.5)",
+    "subtitle": "19 Pruebas Unitarias Automatizadas aprobadas con 100% de éxito",
+    "headers": ["Módulo de Prueba (xUnit)", "Pruebas Ejecutadas", "Superadas", "Fallidas", "Resultado Operativo"],
+    "rows": [
+      ["AuthServiceTests (Autenticación y Sesión)", "3 pruebas", "3", "0", "Aprobado (100%)"],
+      ["AsistenciaServiceTests (Marcaje y Restricciones)", "4 pruebas", "4", "0", "Aprobado (100%)"],
+      ["UsuarioServiceTests (Gestión y CRUD de Usuarios)", "4 pruebas", "4", "0", "Aprobado (100%)"],
+      ["ReporteServiceTests (Atrasos, Salidas e Inasistencias)", "3 pruebas", "3", "0", "Aprobado (100%)"],
+      ["ExportServiceTests (Exportación CSV y UTF-8 BOM)", "5 pruebas", "5", "0", "Aprobado (100%)"]
+    ]
+  },
+  "slide7": {
+    "title": "6. Lista de Chequeo de Continuidad Operacional (Actividad 2.6)",
+    "subtitle": "Auditoría formal de 20 criterios técnicos y funcionales del equipo y software",
+    "headers": ["Fase Evaluada", "Criterios Verificados", "Estado Obtenido", "Responsable"],
+    "rows": [
+      ["Fase 1: Pre-Instalación", "Integridad del SO Windows, .NET 10 Runtime, NTP horario y espacio SSD.", "4/4 Conformes (100%)", "Fabián Mora"],
+      ["Fase 2: Instalación y BD", "Permisos NTFS, SQLite asistencia.db, DatabaseInitializer y hash BCrypt.", "4/4 Conformes (100%)", "Fabián Mora / Paul Ferrada"],
+      ["Fase 3: Interfaz y Funcionalidad", "Login, marcaje entrada/salida único diario, gestión CRUD de usuarios.", "5/5 Conformes (100%)", "Agustín Cañas"],
+      ["Fase 4: Reportes y Ofimática", "Filtros de atrasos > 9:30, salidas < 17:30, inasistencias y exportación Excel.", "4/4 Conformes (100%)", "Paul Ferrada"],
+      ["Fase 5: Validación y Contingencia", "19 pruebas xUnit aprobadas, captura global de errores y plan de backup.", "3/3 Conformes (100%)", "Equipo Completo"]
+    ]
+  },
+  "slide8": {
+    "title": "7. Conclusiones y Oportunidades de Mejora",
+    "subtitle": "Lecciones aprendidas, continuidad operacional y sello valórico institucional",
+    "card1Title": "CONCLUSIONES PRINCIPALES",
+    "card1Items": [
+      "Continuidad Garantizada: El computador y el sistema se encuentran 100% operativos, estables y protegidos ante fallos de conectividad.",
+      "Eficiencia en RRHH: La exportación nativa a Excel automatiza el cálculo de liquidaciones reduciendo tiempos administrativos.",
+      "Sello Valórico Tomista: La Excelencia y Esfuerzo en el código riguroso, junto a la Fraternidad y Solidaridad en la coordinación grupal, superaron las malas prácticas evidenciadas en el caso."
+    ],
+    "card2Title": "OPORTUNIDADES DE MEJORA",
+    "card2Items": [
+      "Sincronización Cloud Híbrida: Sincronizar periódicamente la base local SQLite con una instancia centralizada en Azure SQL o PostgreSQL.",
+      "Marcaje Físico / RFID: Integrar lectores de credenciales RFID o biométricos para hacer aún más ágil el flujo de entrada.",
+      "Alertas Automáticas por Correo: Notificación inmediata a supervisores ante atrasos reiterados o inasistencias injustificadas.",
+      "Instalador MSIX / Inno Setup: Empaquetar prerrequisitos para despliegue automatizado en nuevas sucursales."
+    ]
+  }
+}

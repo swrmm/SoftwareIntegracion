@@ -53,28 +53,20 @@ Para evitar los errores documentados en el caso de estudio (donde se planificó 
 
 ### 2.3 Cronograma y Carta Gantt de la Planificación (Semanas 7 a 11)
 
-La planificación se estructuró en cinco fases correspondientes a las semanas 7 a 11 del semestre académico:
+La planificación se estructuró en cinco fases correspondientes a las semanas 7 a 11 del semestre académico, detallando cada una de las actividades, sus plazos y su estado de ejecución:
 
-```mermaid
-gantt
-    title Cronograma de Continuidad Operacional - Etapa 2
-    dateFormat  YYYY-MM-DD
-    section S7: Sello Valórico & Plan
-    Actividad 2.1 Reflexión Ética y Sello Valórico   :done, s7_1, 2026-09-28, 5d
-    Actividad 2.2 Catastro de Recursos e Inventario   :done, s7_2, 2026-10-01, 3d
-    section S8: Planificación & Diseños
-    Definición de Requisitos y Matriz de Riesgos     :done, s8_1, 2026-10-05, 4d
-    Elaboración de Carta Gantt e Hitos               :done, s8_2, 2026-10-08, 3d
-    section S9: Instalación & Configuración
-    Actividad 2.3 Manual de Instalación y SO          :done, s9_1, 2026-10-12, 4d
-    Actividad 2.4 Registro en Bitácora Técnica       :done, s9_2, 2026-10-15, 3d
-    section S10: Validación & Pruebas
-    Actividad 2.5 Pruebas Unitarias xUnit e Integración :done, s10_1, 2026-10-19, 4d
-    Implementación Módulo Exportación a Ofimática    :done, s10_2, 2026-10-21, 3d
-    section S11: Lista de Chequeo & Cierre
-    Actividad 2.6 Lista de Chequeo de Continuidad     :active, s11_1, 2026-10-23, 2d
-    Grabación de Video Tutorial y Presentación PPT    :active, s11_2, 2026-10-24, 3d
-```
+| Fase / Semana | Actividad | Fecha Inicio | Duración | Responsable | Estado |
+| :--- | :--- | :---: | :---: | :--- | :---: |
+| **Semana 7: Sello Valórico & Plan** | Actividad 2.1: Reflexión Ética y Sello Valórico | 28/09/2026 | 5 días | Equipo Completo | **Listo** |
+| **Semana 7-8: Catastro e Inventario** | Actividad 2.2: Catastro de Recursos e Inventario | 01/10/2026 | 3 días | Fabián Mora | **Listo** |
+| **Semana 8: Planificación & Diseños** | Definición de Requisitos y Matriz de Riesgos | 05/10/2026 | 4 días | Fabián Mora | **Listo** |
+| **Semana 8: Cronograma** | Elaboración de Carta Gantt e Hitos | 08/10/2026 | 3 días | Paul Ferrada | **Listo** |
+| **Semana 9: Instalación & Configuración** | Actividad 2.3: Manual de Instalación y SO | 12/10/2026 | 4 días | Fabián Mora | **Listo** |
+| **Semana 9: Procedimientos Técnicos** | Actividad 2.4: Registro en Bitácora Técnica | 15/10/2026 | 3 días | Paul Ferrada | **Listo** |
+| **Semana 10: Validación & Pruebas** | Actividad 2.5: Pruebas Unitarias xUnit e Integración | 19/10/2026 | 4 días | Paul Ferrada | **Listo** |
+| **Semana 10: Integración Ofimática** | Implementación Módulo Exportación a Ofimática | 21/10/2026 | 3 días | Paul Ferrada | **Listo** |
+| **Semana 11: Lista de Chequeo** | Actividad 2.6: Lista de Chequeo de Continuidad | 23/10/2026 | 2 días | Fabián Mora | **Activo** |
+| **Semana 11: Cierre y Evaluación** | Grabación de Video Tutorial y Presentación PPT | 24/10/2026 | 3 días | Equipo Completo | **Activo** |
 
 ### 2.4 Distribución de Roles del Equipo de Trabajo
 
